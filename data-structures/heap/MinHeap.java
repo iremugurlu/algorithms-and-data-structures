@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 class MinHeap {
-    
+
     private int capacity = 10;
     private int size = 0;
 
@@ -57,12 +57,12 @@ class MinHeap {
     }
 
     public int peek() {
-        if(size == 0) return IllegalStateException();
+        if(size == 0) throw new IllegalStateException();
         return items[0];
     }
 
     public int pop() {
-        if(size == 0) return IllegalStateException();
+        if(size == 0) throw new IllegalStateException();
         int item = items[0];
         items[0] = items[size-1];
         size--;

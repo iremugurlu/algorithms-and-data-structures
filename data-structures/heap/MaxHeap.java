@@ -57,12 +57,12 @@ class MaxHeap {
     }
 
     public int peek() {
-        if(size == 0) return IllegalStateException();
+        if(size == 0) throw new IllegalStateException();
         return items[0];
     }
 
     public int pop() {
-        if(size == 0) return IllegalStateException();
+        if(size == 0) throw new IllegalStateException();
         int item = items[0];
         items[0] = items[size-1];
         size--;
@@ -93,7 +93,7 @@ class MaxHeap {
                 biggerChildIndex = getRightChildIndex(index);
             }
 
-            if(items[index] > items[smallerChildIndex]) {
+            if(items[index] > items[biggerChildIndex]) {
                 break;
             } else {
                 swap(biggerChildIndex, index);
