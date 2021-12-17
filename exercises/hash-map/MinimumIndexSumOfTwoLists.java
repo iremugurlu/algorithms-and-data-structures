@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class MinimumIndexSumOfTwoLists {
     public String[] findRestaurant(String[] list1, String[] list2) {
         Map<String, Integer> map = new HashMap<>();

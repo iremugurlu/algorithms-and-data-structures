@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class IsomorphicStrings {
     public boolean isIsomorphic(String s, String t) {
         HashMap<Character, Character> map = new HashMap<>();

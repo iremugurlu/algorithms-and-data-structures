@@ -1,3 +1,5 @@
+import java.util.*;
+
 class FirstUniqueCharacterInAString {
     public int firstUniqChar(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
