@@ -1,15 +1,14 @@
+// Return true if there is a cycle in the linked list. Otherwise, return false.
 public class LinkedListCycle {
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
+
     public boolean hasCycle(ListNode head) {
         if(head == null) return false;
         ListNode fast = head.next;

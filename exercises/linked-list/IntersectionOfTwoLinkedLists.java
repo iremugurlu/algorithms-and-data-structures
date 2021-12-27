@@ -1,15 +1,17 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+import java.util.*;
+
+// Given the heads of two singly linked-lists headA and headB, 
+// return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
 public class IntersectionOfTwoLinkedLists {
+
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
+
     // solution with no additional memory
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if(headA == null || headB == null) {

@@ -1,15 +1,14 @@
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+// Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
 public class LinkedListCycleII {
+
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
+
     public ListNode detectCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;        
