@@ -4,18 +4,17 @@ import java.util.*;
 // Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
 public class JewelsAndStones {
     public int numJewelsInStones(String jewels, String stones) {
-        Map<Character, Integer> map = new HashMap<>();
+        Set<Character> set = new HashSet<>();
         for(char jewel : jewels.toCharArray()) {
-            map.putIfAbsent(jewel, 0);
-        }
-        for(char stone : stones.toCharArray()) {
-            if(map.containsKey(stone)) {
-                map.put(stone, map.get(stone)+1);
+            if(!set.contains(jewel)) {
+                set.add(jewel);
             }
         }
         int res = 0;
-        for(char key : map.keySet()) {
-            res += map.get(key);
+        for(char stone : stones.toCharArray()) {
+            if(set.contains(stone)) {
+                res++;
+            }
         }
         return res;
      }
