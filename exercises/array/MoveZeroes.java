@@ -2,19 +2,17 @@
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {
         int index = 0;
-        int curr = 0;
+        int newIndex = 0;
         while(index < nums.length) {
-            if(nums[index] == 0) {
-                index++;
-            } else {
-                nums[curr] = nums[index];
-                curr++;
-                index++;
+            if(nums[index] != 0) {
+                nums[newIndex] = nums[index];
+                newIndex++;
             }
+            index++;
         }
-        while(curr < index) {
-            nums[curr] = 0;
-            curr++;
+        while(newIndex < index) {
+            nums[newIndex] = 0;
+            newIndex++;
         }
     }
 }
