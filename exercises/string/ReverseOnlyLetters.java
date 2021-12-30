@@ -23,10 +23,6 @@ public class ReverseOnlyLetters {
             start++;
             end--;
         }
-        String res = "";
-        for(char c : chars) {
-            res += c;
-        }
-        return res;
+        return String.valueOf(chars);
     }
 }
