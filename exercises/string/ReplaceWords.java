@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class ReplaceWords {
     public String replaceWords(List<String> dictionary, String sentence) {
         String[] words = sentence.split(" ");
