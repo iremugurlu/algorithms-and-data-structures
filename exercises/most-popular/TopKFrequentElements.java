@@ -2,17 +2,9 @@
 public class TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
-        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
-            public int compare(Integer n1, Integer n2) {
-                return map.get(n2).compareTo(map.get(n1));
-            }
-        });
+        PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> Integer.compare(map.get(b), map.get(a)));
         for(int num : nums) {
-            if(map.containsKey(num)) {
-                map.put(num, map.get(num)+1);
-            } else {
-                map.put(num, 1);
-            }
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
         for(int key : map.keySet()) {
             queue.add(key);
