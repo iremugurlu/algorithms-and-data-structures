@@ -6,5 +6,8 @@ Main used resources are:
 
 - [LeetCode](https://leetcode.com/) 
 - [Google Tech Dev Guide](https://techdevguide.withgoogle.com/)
+- [Tech Interview Handbook](https://leetcode.com/list/9h4lgwl2/)
 - [Gayle McDowell - Algorithms](https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL)
 - [Gayle McDowell - Data Structures](https://www.youtube.com/playlist?list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX)
+- [Kevin Naughton Jr. Solutions](https://www.youtube.com/c/KevinNaughtonJr)
+- [Nick White Solutions](https://www.youtube.com/c/NickWhite)
