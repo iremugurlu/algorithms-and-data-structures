@@ -1,6 +1,6 @@
 # Algorithms and Data Structures
 
-This repository contains fundeamental algorithms, data structures and practice exercises I have used to prepare for the technical interviews. 
+This repository contains fundamental algorithms, data structures and practice exercises I have used to prepare for the technical interviews. 
 
 Main used resources are:
 
